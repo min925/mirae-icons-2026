@@ -1,0 +1,38 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Subtract_2_transform_0 {
+  0% {
+    transform: translateX(22px) translateY(20px) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(22px) translateY(20px) translateX(0px) translateY(-1px);
+  }
+  50% {
+    transform: translateX(22px) translateY(20px) translateX(0px) translateY(0px);
+  }
+  75% {
+    transform: translateX(22px) translateY(20px) translateX(0px) translateY(1px);
+  }
+  100% {
+    transform: translateX(22px) translateY(20px) translateX(0px) translateY(0px);
+  }
+}
+#Subtract_2 {
+  transform-origin: 0 0;
+  animation: kf_Subtract_2_transform_0 1.2s linear infinite;
+}
+</style>
+<g id="ani_help_form-download" clip-path="url(#clip0_3859_165719)">
+<path id="Vector_19" transform="translate(9 16)" d="M15 0H0V6" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_20" transform="translate(9 22)" d="M0 0H11" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_21" transform="translate(9 28)" d="M0 0H6" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_22" transform="translate(9 11)" d="M0 0H6" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Subtract" transform="translate(4 3)" d="M27 8V15.2256C26.3566 15.0795 25.6876 15 25 15V9H21C19.3431 9 18 7.65685 18 6V2H2V33H25C25.6877 33 26.3565 32.9195 27 32.7734V33L26.9893 33.2041C26.8938 34.1457 26.1457 34.8938 25.2041 34.9893L25 35H2C0.96435 35 0.113005 34.2128 0.0107422 33.2041L0 33V2C0 0.895431 0.895431 8.05332e-09 2 0H19L27 8ZM20 6C20 6.55228 20.4477 7 21 7H23.1719L20 3.82812V6Z" fill="#072756"/>
+<path id="Subtract_2" transform="translate(22 20)" d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM6.93359 2.63965C6.38152 2.6399 5.93359 3.08752 5.93359 3.63965V8.38672L4.625 7.53613C4.16187 7.23558 3.54196 7.36702 3.24121 7.83008C2.94075 8.29306 3.07245 8.91301 3.53516 9.21387L6.38867 11.0664L6.93359 11.4199L7.47754 11.0664L10.3311 9.21387C10.7942 8.91304 10.9258 8.29323 10.625 7.83008C10.3241 7.36706 9.70432 7.23535 9.24121 7.53613L7.93359 8.38574V3.63965C7.93359 3.0875 7.48569 2.63987 6.93359 2.63965Z" fill="#FF5400"/>
+</g>
+<defs>
+<clipPath id="clip0_3859_165719">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

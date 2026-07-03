@@ -1,0 +1,36 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Vector_22_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(17px) translate(6px, 7.5px) rotate(0rad) translate(-6px, -7.5px);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(17px) translate(6px, 7.5px) rotate(0.175rad) translate(-6px, -7.5px);
+  }
+  30% {
+    transform: translateX(24px) translateY(17px) translate(6px, 7.5px) rotate(0rad) translate(-6px, -7.5px);
+  }
+  100% {
+    transform: translateX(24px) translateY(17px) translate(6px, 7.5px) rotate(0rad) translate(-6px, -7.5px);
+  }
+}
+#Vector_22 {
+  transform-origin: 0 0;
+  animation: kf_Vector_22_transform_0 2s linear infinite;
+}
+</style>
+<g id="ani_help_document-security" clip-path="url(#clip0_3858_165390)">
+<path id="Vector_19" transform="translate(9 16)" d="M0 0H15" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_20" transform="translate(9 22)" d="M0 0H11" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_21" transform="translate(9 28)" d="M0 0H6" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Subtract" transform="translate(4 3)" d="M27 8V12.2373L26 11.4326L25 12.2373V9H21C19.3431 9 18 7.65685 18 6V2H2V33H25V30.7676C25.1258 30.8132 25.2527 30.8602 25.3828 30.9023L26 31.1025L26.6172 30.9023C26.7473 30.8602 26.8742 30.8132 27 30.7676V33L26.9893 33.2041C26.8938 34.1457 26.1457 34.8938 25.2041 34.9893L25 35H2C0.96435 35 0.113005 34.2128 0.0107422 33.2041L0 33V2C0 0.895431 0.895431 8.05332e-09 2 0H19L27 8ZM20 6C20 6.55228 20.4477 7 21 7H23.1719L20 3.82812V6Z" fill="#072756"/>
+<path id="Vector_22" transform="translate(24 17)" d="M0 2.73913C2.69333 2.24348 5.12222 0.706522 6 0C6.87778 0.706522 9.30667 2.24348 12 2.73913V6.91304C11.9778 8.96739 10.7467 13.4609 6 15C1.25333 13.4609 0.0222222 8.96739 0 6.91304V2.73913Z" fill="#FF5400"/>
+</g>
+<defs>
+<clipPath id="clip0_3858_165390">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

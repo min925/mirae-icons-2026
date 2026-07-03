@@ -1,0 +1,46 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Line_3_opacity_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 1;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 0;
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 1;
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 0;
+  }
+  40% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Line_3 {
+  animation: kf_Line_3_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ani_steps_complete-verification" clip-path="url(#clip0_3842_159907)">
+<path id="Rectangle_65" transform="translate(3 3)" d="M10 0H2C0.895431 0 0 0.89543 0 2V10" stroke="#072756" stroke-width="2"/>
+<path id="Rectangle_67" transform="translate(37 37) rotate(-180)" d="M10 0H2C0.895431 0 0 0.895431 0 2V10" stroke="#072756" stroke-width="2"/>
+<path id="Rectangle_66" transform="translate(3 37) rotate(-90)" d="M10 0H2C0.895431 0 0 0.89543 0 2V10" stroke="#072756" stroke-width="2"/>
+<path id="Rectangle_68" transform="translate(37 3) rotate(90)" d="M10 0H2C0.895431 0 0 0.89543 0 2V10" stroke="#072756" stroke-width="2"/>
+<line id="Line_3" transform="translate(3 17)" y1="-1" x2="34" y2="-1" stroke="#FF5400" stroke-width="2"/>
+<path id="Ellipse_8" transform="translate(10 23)" d="M0 8C1.40153 3.35018 5.34915 0 10 0C14.6508 0 18.5985 3.35018 20 8" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Subtract" transform="translate(13.0723 8)" d="M13.2529 10C12.1294 12.3647 9.71995 14 6.92773 14C4.13552 14 1.7261 12.3647 0.602539 10H2.92773C3.83995 11.2143 5.292 12 6.92773 12C8.56347 12 10.0155 11.2143 10.9277 10H13.2529ZM6.92773 0C10.4541 0 13.3702 2.6078 13.8555 6H11.8271C11.3638 3.71782 9.34665 2 6.92773 2C4.50882 2 2.49163 3.71782 2.02832 6H0C0.485313 2.6078 3.40133 1.17537e-07 6.92773 0Z" fill="#072756"/>
+</g>
+<defs>
+<clipPath id="clip0_3842_159907">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

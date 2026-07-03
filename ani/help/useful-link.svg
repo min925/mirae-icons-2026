@@ -1,0 +1,47 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Rectangle_100_opacity_0 {
+  0% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 1;
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 0;
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 0;
+  }
+  50% {
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#Rectangle_100 {
+  animation: kf_Rectangle_100_opacity_0 2s linear infinite;
+}
+</style>
+<g id="ani_help_useful-link" clip-path="url(#clip0_3858_165352)">
+<path id="Rectangle_100" transform="translate(3 6)" d="M12 0H0V6H16.5L12 0Z" fill="#FF5400"/>
+<path id="Rectangle_99" transform="translate(3 6)" d="M16.5 6L12.6 0.8C12.2223 0.296388 11.6295 0 11 0H2C0.895431 0 0 0.89543 0 2V6M16.5 6H32C33.1046 6 34 6.89543 34 8V28C34 29.1046 33.1046 30 32 30H2C0.89543 30 0 29.1046 0 28V6M16.5 6H0" stroke="#072756" stroke-width="2"/>
+<path id="Rectangle_101" transform="translate(23.435 14) rotate(45)" d="M4 11C6.20914 11 8 9.35838 8 7.33333V3.66667C8 1.64162 6.20914 0 4 0C1.79086 0 0 1.64162 0 3.66667L2.18557e-08 6.33333" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Rectangle_102" transform="translate(15.6569 33.0918) rotate(-135)" d="M4 11C6.20914 11 8 9.35838 8 7.33333V3.66667C8 1.64162 6.20914 0 4 0C1.79086 0 0 1.64162 0 3.66667L-6.2438e-08 6.33333" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3858_165352">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

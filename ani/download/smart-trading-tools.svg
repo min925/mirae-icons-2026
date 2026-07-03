@@ -1,0 +1,73 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_orange-base_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(1) scaleY(1) translate(-21px, -21px);
+  }
+  5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(0.95) scaleY(0.95) translate(-21px, -21px);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(1.1) scaleY(1.1) translate(-21px, -21px);
+  }
+  22.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(0.95) scaleY(0.95) translate(-21px, -21px);
+  }
+  32.5% {
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(1) scaleY(1) translate(-21px, -21px);
+  }
+  100% {
+    transform: translateX(27px) translateY(28px) translate(21px, 21px) scaleX(1) scaleY(1) translate(-21px, -21px);
+  }
+}
+#orange-base {
+  transform-origin: 0 0;
+  animation: kf_orange-base_transform_0 4s linear infinite;
+}
+</style>
+<g id="ani_download_smart-trading-tools" clip-path="url(#clip0_3812_99629)">
+<circle id="Ellipse_13" transform="translate(13 17.145)" cx="5" cy="5" r="4" stroke="#072756" stroke-width="2"/>
+<circle id="Ellipse_14" transform="translate(8 51.145)" cx="4.5" cy="4.5" r="3.5" stroke="#072756" stroke-width="2"/>
+<path id="Vector_11" transform="translate(16 56)" d="M9 0H0" stroke="#072756" stroke-width="2"/>
+<path id="Vector_10" transform="translate(18 26.145)" d="M0 0V15C0 16.1046 0.895431 17 2 17H7" stroke="#072756" stroke-width="2"/>
+<path id="Ellipse_15" transform="translate(81 15.145) rotate(90)" d="M4.5 1C6.3365 1 8 2.68915 8 5C8 7.31085 6.3365 9 4.5 9C2.6635 9 1 7.31085 1 5C1 2.68915 2.6635 1 4.5 1Z" stroke="#072756" stroke-width="2"/>
+<circle id="Ellipse_16" transform="translate(47 9.14502) rotate(90)" cx="4.5" cy="4.5" r="3.5" stroke="#072756" stroke-width="2"/>
+<path id="Vector_12" transform="translate(42 17) rotate(90)" d="M9 0H0" stroke="#072756" stroke-width="2"/>
+<path id="Vector_13" transform="translate(72 19.145) rotate(90)" d="M0 0V15C0 16.1046 0.895431 17 2 17H7" stroke="#072756" stroke-width="2"/>
+<path id="Ellipse_17" transform="translate(83 82.145) rotate(-180)" d="M5 1C7.20914 1 9 2.79086 9 5C9 7.20914 7.20914 9 5 9C2.79086 9 1 7.20914 1 5C1 2.79086 2.79086 1 5 1Z" stroke="#072756" stroke-width="2"/>
+<path id="Ellipse_18" transform="translate(88 48.145) rotate(-180)" d="M4.5 1C6.433 1 8 2.567 8 4.5C8 6.433 6.433 8 4.5 8C2.567 8 1 6.433 1 4.5C1 2.567 2.567 1 4.5 1Z" stroke="#072756" stroke-width="2"/>
+<path id="Vector_14" transform="matrix(-1 0 0 -1 80 44)" d="M9 0H0" stroke="#072756" stroke-width="2"/>
+<path id="Vector_15" transform="translate(78 73.145) rotate(-180)" d="M0 0V14C0 15.1046 0.895431 16 2 16H7" stroke="#072756" stroke-width="2"/>
+<path id="Ellipse_19" transform="translate(15 84.145) rotate(-90)" d="M5 1C7.20914 1 9 2.79086 9 5C9 7.20914 7.20914 9 5 9C2.79086 9 1 7.20914 1 5C1 2.79086 2.79086 1 5 1Z" stroke="#072756" stroke-width="2"/>
+<path id="Ellipse_20" transform="translate(49 89.145) rotate(-90)" d="M4.5 1C6.433 1 8 2.567 8 4.5C8 6.433 6.433 8 4.5 8C2.567 8 1 6.433 1 4.5C1 2.567 2.567 1 4.5 1Z" stroke="#072756" stroke-width="2"/>
+<path id="Vector_16" transform="translate(54 81) rotate(-90)" d="M9 0H0" stroke="#072756" stroke-width="2"/>
+<path id="Vector_17" transform="translate(24 79.145) rotate(-90)" d="M0 0V15C0 16.1046 0.89543 17 2 17H7" stroke="#072756" stroke-width="2"/>
+<g id="orange-base" filter="url(#filter0_d_3812_99629)" transform="translate(27 28)">
+<rect width="42" height="42" rx="2" id="orange-base_bg_0" fill="#FF5400">
+</rect>
+</g>
+<g id="sign" transform="translate(39.5975 34.2169)">
+<g id="Group">
+<path id="Vector" d="M8.65779 29.8754L8.6562 24.8956M8.6562 24.8956H0M8.6562 24.8956H9.52118C12.1511 24.8956 14.2826 22.7839 14.2826 20.1784V14.9377H6.34693M8.65779 0V4.97975M8.65779 4.97975H15.8713M8.65779 4.97975H6.3501C3.72023 4.97975 1.58872 7.09147 1.58872 9.69691V16.5981" stroke="#FAFBFF" stroke-width="1.99999"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_3812_99629" x="-4.00097" y="-4.00097" width="50.0019" height="50.0019" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3812_99629"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3812_99629" result="shape"/>
+</filter>
+<clipPath id="clip0_3812_99629">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs>
+</svg>

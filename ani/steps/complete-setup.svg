@@ -1,0 +1,79 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Rectangle_100_transform_0 {
+  0% {
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+  40% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(0) scaleY(1) translate(0px, -4.5px);
+  }
+  65% {
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+  100% {
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+}
+#Rectangle_100 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_100_transform_0 2s linear infinite;
+}
+@keyframes kf_Rectangle_100_2_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(0) scaleY(1) translate(0px, -4.5px);
+  }
+  25% {
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+  100% {
+    transform: translateX(-3px) translateY(-2px) translate(0px, 4.5px) scaleX(1) scaleY(1) translate(0px, -4.5px);
+  }
+}
+#Rectangle_100_2 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_100_2_transform_0 2s linear infinite;
+}
+</style>
+<g id="ani_steps_complete-setup" clip-path="url(#clip0_3842_159887)">
+<g id="Union" transform="translate(13)">
+<mask id="path-1-inside-1_3842_159887" fill="white">
+<path d="M7.06934 0C8.71651 0 10.1008 1.12666 10.4932 2.65137H13.1396C13.6919 2.65144 14.1396 3.09913 14.1396 3.65137V6.95312C14.1396 7.50536 13.6919 7.95305 13.1396 7.95312H1C0.447715 7.95312 0 7.50541 0 6.95312V3.65137C0 3.09908 0.447715 2.65137 1 2.65137H3.64648C4.03882 1.12681 5.42236 0.000186427 7.06934 0Z"/>
+</mask>
+<path d="M7.06934 0V-2H7.06911L7.06934 0ZM10.4932 2.65137L8.55627 3.14979C8.7837 4.0336 9.58056 4.65137 10.4932 4.65137V2.65137ZM13.1396 2.65137L13.1399 0.651367H13.1396V2.65137ZM13.1396 7.95312V9.95312H13.1399L13.1396 7.95312ZM3.64648 2.65137V4.65137C4.55908 4.65137 5.35594 4.03361 5.58338 3.14981L3.64648 2.65137ZM7.06934 0V2C7.78196 2 8.38583 2.48746 8.55627 3.14979L10.4932 2.65137L12.4301 2.15295C11.8158 -0.234138 9.65106 -2 7.06934 -2V0ZM10.4932 2.65137V4.65137H13.1396V2.65137V0.651367H10.4932V2.65137ZM13.1396 2.65137L13.1394 4.65137C12.5875 4.65129 12.1396 4.20396 12.1396 3.65137H14.1396H16.1396C16.1396 1.99429 14.7962 0.651589 13.1399 0.651367L13.1396 2.65137ZM14.1396 3.65137H12.1396V6.95312H14.1396H16.1396V3.65137H14.1396ZM14.1396 6.95312H12.1396C12.1396 6.40053 12.5875 5.9532 13.1394 5.95312L13.1396 7.95312L13.1399 9.95312C14.7962 9.9529 16.1396 8.6102 16.1396 6.95312H14.1396ZM13.1396 7.95312V5.95312H1V7.95312V9.95312H13.1396V7.95312ZM1 7.95312V5.95312C1.55228 5.95312 2 6.40084 2 6.95312H0H-2C-2 8.60998 -0.656854 9.95312 1 9.95312V7.95312ZM0 6.95312H2V3.65137H0H-2V6.95312H0ZM0 3.65137H2C2 4.20365 1.55228 4.65137 1 4.65137V2.65137V0.651367C-0.656854 0.651367 -2 1.99451 -2 3.65137H0ZM1 2.65137V4.65137H3.64648V2.65137V0.651367H1V2.65137ZM3.64648 2.65137L5.58338 3.14981C5.75391 2.48714 6.35744 2.00008 7.06956 2L7.06934 0L7.06911 -2C4.48727 -1.99971 2.32372 -0.233528 1.70959 2.15292L3.64648 2.65137Z" fill="#072756" mask="url(#path-1-inside-1_3842_159887)"/>
+</g>
+<path id="Vector_22" transform="translate(6 5)" d="M7.67742 0H2C0.895432 0 0 0.895431 0 2V30C0 31.1046 0.895431 32 2 32H26C27.1046 32 28 31.1046 28 30V2C28 0.895431 27.1046 0 26 0H20.3226" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Mask_group" transform="translate(11 23)">
+<mask id="mask0_3842_159887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<path id="Vector_26" d="M0 2.5L2.33333 5L7 0" stroke="#FF5400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_3842_159887)">
+<rect id="Rectangle_100" transform="translate(-3 -2)" width="12" height="9" fill="#FF5400"/>
+</g>
+</g>
+<path id="Vector_25" transform="translate(22 18)" d="M0 0H8" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_27" transform="translate(22 26)" d="M0 0H8" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Mask_group_2" transform="translate(11 15)">
+<mask id="mask1_3842_159887" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40">
+<path id="Vector_23" d="M0 2.5L2.33333 5L7 0" stroke="#FF5400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask1_3842_159887)">
+<rect id="Rectangle_100_2" transform="translate(-3 -2)" width="12" height="9" fill="#FF5400"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_3842_159887">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

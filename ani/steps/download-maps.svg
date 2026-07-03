@@ -1,0 +1,28 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Line_3_transform_0 {
+  0% {
+    transform: translateX(25px) translateY(19px) translateX(0px) translateY(0px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  50% {
+    transform: translateX(25px) translateY(19px) translateX(0px) translateY(3px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  100% {
+    transform: translateX(25px) translateY(19px) translateX(0px) translateY(0px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+}
+#Line_3 {
+  transform-origin: 0 0;
+  animation: kf_Line_3_transform_0 1s linear infinite;
+}
+</style>
+<g id="ani_steps_download-maps" clip-path="url(#clip0_3842_159925)">
+<path id="Union" transform="translate(2 5)" d="M27 23.9814H29C32.9089 23.7241 36 20.4741 36 16.5C36 12.3579 32.6421 9 28.5 9C28.3154 9 28.1324 9.00837 27.9512 9.02148C27.4593 3.95794 23.1926 0 18 0C12.8073 0 8.53963 3.9579 8.04785 9.02148C7.8669 9.00842 7.68429 9 7.5 9C3.35786 9 0 12.3579 0 16.5C0 20.4741 3.09105 23.7241 7 23.9814H9" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Line_3" transform="translate(25 19) rotate(90)" d="M0 5H16M12.1132 4.37115e-08L16 5L12.1132 10" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_3842_159925">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

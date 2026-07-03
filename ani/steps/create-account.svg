@@ -1,0 +1,32 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Rectangle_64_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(34.971px) translateY(14px) translate(-14.496px, 19.445px) rotate(0rad) translate(14.496px, -19.445px) rotate(0.785rad) scaleX(1) scaleY(1);
+  }
+  50.16% {
+    transform: translateX(34.971px) translateY(14px) translate(-14.496px, 19.445px) rotate(-0.078rad) translate(14.496px, -19.445px) rotate(0.785rad) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateX(34.971px) translateY(14px) translate(-14.496px, 19.445px) rotate(0rad) translate(14.496px, -19.445px) rotate(0.785rad) scaleX(1) scaleY(1);
+  }
+}
+#Rectangle_64 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_64_transform_0 1s linear infinite;
+}
+</style>
+<g id="ani_steps_create-account" clip-path="url(#clip0_3842_159917)">
+<path id="Vector_19" transform="translate(9 16)" d="M0 0H15" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_20" transform="translate(9 22)" d="M0 0H11" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_21" transform="translate(9 28)" d="M0 0H6" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Rectangle_64" transform="translate(34.9707 14) rotate(45)" d="M5.25879 19L3.5 22.0137L1.74121 19H5.25879ZM6 5V17H1V5H6ZM6 1V3H1V1H6Z" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+<path id="Subtract" transform="translate(4 3)" d="M27 8V12.6562L25 14.6562V9H21C19.3431 9 18 7.65685 18 6V2H2V33H25V29.6631L27 27.6631V33L26.9893 33.2041C26.8938 34.1457 26.1457 34.8938 25.2041 34.9893L25 35H2C0.96435 35 0.113005 34.2128 0.0107422 33.2041L0 33V2C0 0.895431 0.895431 8.05332e-09 2 0H19L27 8ZM20 6C20 6.55228 20.4477 7 21 7H23.1719L20 3.82812V6Z" fill="#072756"/>
+</g>
+<defs>
+<clipPath id="clip0_3842_159917">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
