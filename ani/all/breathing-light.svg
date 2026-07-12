@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+    <defs>
+        <style>
+            @keyframes growAndSmoothFadeInSVG {
+                0% { transform: scale(0); opacity: 1; }
+                70% { transform: scale(1); opacity: 1; }
+                100% { transform: scale(1.1); opacity: 0; }
+            }
+            .pulse-circle {
+                transform-origin: 200px 200px;
+                animation: growAndSmoothFadeInSVG 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+                fill: rgba(255, 255, 255, 0.3);
+            }
+            /* 關鍵改變：全部改成負數延遲（Negative Delay） */
+            /* 讓它們一出生就在各自的進度線上：0秒、2秒、4秒、6秒、8秒 */
+            .delay-svg-1 { animation-delay: 0s; }
+            .delay-svg-2 { animation-delay: -2s; }
+            .delay-svg-3 { animation-delay: -4s; }
+            .delay-svg-4 { animation-delay: -6s; }
+            .delay-svg-5 { animation-delay: -8s; }
+        </style>
+    </defs>
+    <g>
+        <circle cx="200" cy="200" r="180" class="pulse-circle delay-svg-1" />
+        <circle cx="200" cy="200" r="180" class="pulse-circle delay-svg-2" />
+        <circle cx="200" cy="200" r="180" class="pulse-circle delay-svg-3" />
+        <circle cx="200" cy="200" r="180" class="pulse-circle delay-svg-4" />
+        <circle cx="200" cy="200" r="180" class="pulse-circle delay-svg-5" />
+    </g>
+</svg>
