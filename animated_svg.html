@@ -14,6 +14,24 @@
 		.animate-subtle-up-down {
 			animation: subtle-up-down 6s ease-in-out infinite;
 		}
+		.updated {
+			position: relative;
+			width: 3rem;
+			height: 1rem;
+			background-color: #FF5400;
+		}
+		.updated::before {
+			content: 'UPDATED';
+			position: absolute;
+			font-size: 0.5rem;
+			text-align: center;
+			align-content: center;
+			color: white;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	</style>
 </head>
 <body class="flex flex-col gap-8 p-4 w-full">
@@ -52,6 +70,7 @@
 	<div class="w-full bg-black text-white text-center p-2">HOMEPAGE</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
+			<div class="updated"></div>
 			Banner<br />
 			<a class="underline text-xs" href="./ani/banner/homepage-d.svg" target="_blank">bg svg</a>, <a class="underline text-xs" href="./ani/banner/globe.svg" target="_blank">globe svg</a>
 		</div>
@@ -59,6 +78,8 @@
 			<img class="w-full" src="./ani/banner/homepage-d.svg" alt="">
 			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_110s_linear_infinite]" src="./ani/banner/globe.svg" alt="">
 			<div class="absolute bottom-0 left-0 w-full min-h-0 pb-[18%] bg-gradient-to-b from-[#001932]/0 to-[#001932]"></div>
+			<!-- for testing -->
+			<img class="absolute w-full top-0 left-0" src="./ani/banner/homepage-d-content.png" alt="">
 		</div>
 	</div>
 	<div class="flex flex-row gap-4 items-center">
@@ -90,6 +111,7 @@
 	<div class="w-full bg-black text-white text-center p-2">THE APP</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
+			<div class="updated"></div>
 			Banner<br />
 			<a class="underline text-xs" href="./ani/banner/theapp-screen-l.png" target="_blank">app screen left png</a>, <a class="underline text-xs" href="./ani/banner/theapp-screen-m.png" target="_blank">app screen middle png</a>, <a class="underline text-xs" href="./ani/banner/theapp-screen-r.png" target="_blank">app screen right png</a>, <a class="underline text-xs" href="./ani/banner/theapp-d.svg" target="_blank">bg svg</a>
 		</div>
@@ -111,6 +133,7 @@
 	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
+			<div class="updated"></div>
 			Our Worldwide Network
 		</div>
 		<img class="flex-1 min-w-0 w-full h-auto object-cover" src="./ani/the-app/worldwide-network.svg" alt="">
@@ -130,11 +153,14 @@
 	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
+			<div class="updated"></div>
 			Need help getting started?<br />
-			<a class="underline text-xs" href="./ani/get-started/opening-account.png" target="_blank">base png</a>, <a class="underline text-xs" href="./ani/get-started/submitted.svg" target="_blank">submitted svg</a>
+			<a class="underline text-xs" href="./ani/get-started/opening-account-base-btm.png" target="_blank">base (btm) png</a>, <a class="underline text-xs" href="./ani/get-started/opening-account.svg" target="_blank">screen svg</a>, <a class="underline text-xs" href="./ani/get-started/opening-account-base-top.png" target="_blank">base (top) png</a>, <a class="underline text-xs" href="./ani/get-started/submitted.svg" target="_blank">submitted svg</a>
 		</div>
 		<div class="relative max-w-[600px] w-full">
-			<img src="./ani/get-started/opening-account.png" alt="">
+			<img src="./ani/get-started/opening-account-base-btm.png" alt="">
+			<img class="absolute w-full h-full top-0 left-0" src="./ani/get-started/opening-account.svg" alt="">
+			<img class="absolute w-full h-full top-0 left-0" src="./ani/get-started/opening-account-base-top.png" alt="">
 			<img class="absolute left-[2.7%] top-[12.2%] w-[23%]" src="./ani/get-started/submitted.svg" alt="">
 		</div>
 	</div>
@@ -151,6 +177,23 @@
 
 	<!-- SUPPORT -->
 	<div class="w-full bg-black text-white text-center p-2">SUPPORT</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			<div class="updated"></div>
+			Banner<br />
+			<a class="underline text-xs" href="./ani/banner/support-d.svg" target="_blank">desktop svg</a>, <a class="underline text-xs" href="./ani/banner/support-m.svg" target="_blank">mobile svg</a>
+		</div>
+		<div class="flex flex-1 min-w-0 w-full  flex-row gap-4">
+			<div class="relative w-full overflow-hidden">
+				<img class="w-full" src="./ani/banner/support-d.png" alt="">
+				<img class="absolute top-0 left-0 w-full" src="./ani/banner/support-d.svg" alt="">
+			</div>
+			<div class="relative w-full max-w-[300px] overflow-hidden">
+				<img class="w-full" src="./ani/banner/support-m.png" alt="">
+				<img class="absolute top-0 left-0 w-full" src="./ani/banner/support-m.svg" alt="">
+			</div>
+		</div>
+	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
 			Contact Bar
