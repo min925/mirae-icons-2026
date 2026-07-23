@@ -1,0 +1,189 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Line_24_transform_0 {
+  0% {
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  2.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  5% {
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  15% {
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translateX(14px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+}
+#Line_24 {
+  transform-origin: 0 0;
+  animation: kf_Line_24_transform_0 4s linear infinite;
+}
+@keyframes kf_Line_29_transform_0 {
+  0% {
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  3.75% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  6.25% {
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  12.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  17.5% {
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translateX(14px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+}
+#Line_29 {
+  transform-origin: 0 0;
+  animation: kf_Line_29_transform_0 4s linear infinite;
+}
+@keyframes kf_Line_30_transform_0 {
+  0% {
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  7.5% {
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  20% {
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translateX(14px) translateY(49px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+}
+#Line_30 {
+  transform-origin: 0 0;
+  animation: kf_Line_30_transform_0 4s linear infinite;
+}
+@keyframes kf_Line_31_transform_0 {
+  0% {
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  6.25% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  8.75% {
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  17.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  22.5% {
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translateX(53px) translateY(28.5px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+}
+#Line_31 {
+  transform-origin: 0 0;
+  animation: kf_Line_31_transform_0 4s linear infinite;
+}
+@keyframes kf_Line_32_transform_0 {
+  0% {
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  7.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  10% {
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(0) scaleY(1) translate(-1px, 0px);
+  }
+  25% {
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translateX(53px) translateY(39px) translate(1px, 0px) scaleX(1) scaleY(1) translate(-1px, 0px);
+  }
+}
+#Line_32 {
+  transform-origin: 0 0;
+  animation: kf_Line_32_transform_0 4s linear infinite;
+}
+@keyframes kf_Ellipse_85_transform_0 {
+  0% {
+    transform: translateX(-30px) translateY(30px) translateX(0px) translateY(0px);
+  }
+  5% {
+    transform: translateX(-30px) translateY(30px) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(-30px) translateY(30px) translateX(60px) translateY(-60px);
+  }
+  100% {
+    transform: translateX(-30px) translateY(30px) translateX(60px) translateY(-60px);
+  }
+}
+#Ellipse_85 {
+  transform-origin: 0 0;
+  animation: kf_Ellipse_85_transform_0 4s linear infinite;
+}
+</style>
+<g id="ani_insights_get-start-with-investing" clip-path="url(#clip0_4774_179867)">
+<path id="Subtract" transform="translate(5 13.5)" d="M20.5 61.9863C29.128 61.9863 32.7508 63.7733 34.9883 65.7422C35.5262 66.2156 35.9697 66.6863 36.3545 67.0947C36.7503 67.5149 37.0695 67.8533 37.4092 68.1367C38.0246 68.65 38.72 69 40 69C41.28 69 41.9754 68.65 42.5908 68.1367C42.9305 67.8533 43.2497 67.5149 43.6455 67.0947C44.0303 66.6863 44.4738 66.2156 45.0117 65.7422C46.8902 64.0892 49.7452 62.5649 55.7188 62.1182C56.1974 62.7877 56.7169 63.4258 57.2725 64.0303C50.5908 64.3094 47.9154 65.8516 46.333 67.2441C45.8747 67.6474 45.4911 68.0534 45.1016 68.4668C44.7231 68.8685 44.3205 69.2978 43.8721 69.6719C42.9111 70.4735 41.7663 71 40 71C38.2337 71 37.0889 70.4735 36.1279 69.6719C35.6795 69.2978 35.2769 68.8685 34.8984 68.4668C34.5089 68.0534 34.1253 67.6474 33.667 67.2441C31.9194 65.7062 28.8385 63.9863 20.5 63.9863H1C0.447715 63.9863 0 63.5386 0 62.9863C0 62.434 0.447715 61.9863 1 61.9863H20.5ZM39.0635 65.3506C39.0642 65.3524 39.064 65.3528 39.0635 65.3516C39.0625 65.349 39.0592 65.3399 39.0527 65.3252C39.0397 65.2958 39.0146 65.2431 38.9756 65.1699C38.8974 65.0235 38.7616 64.7952 38.5449 64.5117C38.1126 63.9461 37.3519 63.1497 36.0752 62.3369C33.523 60.7121 28.849 58.9863 20.5 58.9863H1C0.447724 58.9863 1.4431e-05 58.5386 0 57.9863V1C0 0.447715 0.447715 0 1 0H29.3633C33.5122 0 36.4149 1.92079 38.2539 3.80957C39.002 4.57792 39.5786 5.34489 40 5.98438C40.4214 5.34489 40.998 4.57792 41.7461 3.80957C43.5851 1.92079 46.4878 0 50.6367 0H79L79.1025 0.00488281C79.6067 0.0562144 80 0.482323 80 1V32.165C79.3505 31.8813 78.6833 31.6306 78 31.416V2H50.6367C47.1704 2 44.7541 3.58605 43.1787 5.2041C42.3885 6.01572 41.8173 6.82985 41.4443 7.43945C41.2585 7.74324 41.1231 7.99401 41.0361 8.16504C41.0228 8.19118 41.011 8.21601 41 8.23828V62.0635C41.4932 61.6075 42.1019 61.126 42.8506 60.6494C44.9995 59.2813 48.2687 57.9676 53.2041 57.3516C53.4432 58.0074 53.7167 58.6468 54.0205 59.2686C48.9957 59.8231 45.854 61.1087 43.9248 62.3369C42.6481 63.1497 41.8874 63.9461 41.4551 64.5117C41.2384 64.7952 41.1026 65.0235 41.0244 65.1699C40.9854 65.2431 40.9603 65.2958 40.9473 65.3252C40.9408 65.3399 40.9375 65.349 40.9365 65.3516C40.936 65.3528 40.9358 65.3524 40.9365 65.3506C40.9369 65.3497 40.9378 65.3484 40.9385 65.3467C40.9388 65.3459 40.9391 65.3447 40.9395 65.3438V65.3418C40.7957 65.7368 40.4205 66 40 66C39.6326 66 39.2992 65.7994 39.125 65.4854L39.0635 65.3506ZM2 56.9863H20.5C29.1174 56.9863 34.1933 58.7674 37.1494 60.6494C37.8981 61.126 38.5068 61.6075 39 62.0635V8.23828C38.989 8.21601 38.9772 8.19118 38.9639 8.16504C38.8769 7.99401 38.7415 7.74324 38.5557 7.43945C38.1827 6.82985 37.6115 6.01572 36.8213 5.2041C35.2459 3.58605 32.8296 2 29.3633 2H2V56.9863Z" fill="#072756"/>
+<line id="Line_24" transform="translate(14 28.5)" x1="1" y1="-1" x2="22" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_29" transform="translate(14 39)" x1="1" y1="-1" x2="22" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_30" transform="translate(14 49)" x1="1" y1="-1" x2="22" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_31" transform="translate(53 28.5)" x1="1" y1="-1" x2="22" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_32" transform="translate(53 39)" x1="1" y1="-1" x2="22" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<g id="Subtract_2" filter="url(#filter0_d_4774_179867)" transform="translate(60 47)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 0C26.3888 0 34 7.61116 34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17C0 7.61116 7.61116 0 17 0ZM16.1318 10.1816C15.5797 10.1816 15.132 10.6295 15.1318 11.1816C15.1318 11.7339 15.5796 12.1816 16.1318 12.1816H20.082L10.4746 21.7891C10.0845 22.1796 10.0842 22.8127 10.4746 23.2031C10.865 23.5935 11.4981 23.5933 11.8887 23.2031L21.4961 13.5957V17.5459C21.4961 18.0982 21.9438 18.5459 22.4961 18.5459C23.0482 18.5457 23.4951 18.098 23.4951 17.5459V10.1816H16.1318Z" id="Subtract_2_bg_0" fill="#FF5400">
+</path>
+</g>
+<g id="Mask_group" clip-path="url(#clip1_4774_179867)" transform="translate(60 47)">
+<mask id="mask0_4774_179867" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
+<circle id="Ellipse_84" cx="17" cy="17" r="17" fill="#FF5400"/>
+</mask>
+<g mask="url(#mask0_4774_179867)">
+<circle id="Ellipse_85" transform="translate(-30 30)" cx="17" cy="17" r="17" fill="#FF5400"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_4774_179867" x="-4" y="-4" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4774_179867"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4774_179867" result="shape"/>
+</filter>
+<clipPath id="clip0_4774_179867">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4774_179867">
+<rect width="34" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>

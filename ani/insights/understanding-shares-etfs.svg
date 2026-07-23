@@ -1,0 +1,263 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Vector_19_transform_0 {
+  0% {
+    transform: translateX(11px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(11px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  7.5% {
+    transform: translateX(11px) translateY(75px) scaleX(0) scaleY(1);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(11px) translateY(75px) scaleX(0) scaleY(1);
+  }
+  15% {
+    transform: translateX(11px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateX(11px) translateY(75px) scaleX(1) scaleY(1);
+  }
+}
+#Vector_19 {
+  transform-origin: 0 0;
+  animation: kf_Vector_19_transform_0 4s linear infinite;
+}
+@keyframes kf_Vector_21_transform_0 {
+  0% {
+    transform: translateX(59px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(59px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  12.5% {
+    transform: translateX(59px) translateY(75px) scaleX(0) scaleY(1);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(59px) translateY(75px) scaleX(0) scaleY(1);
+  }
+  20% {
+    transform: translateX(59px) translateY(75px) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateX(59px) translateY(75px) scaleX(1) scaleY(1);
+  }
+}
+#Vector_21 {
+  transform-origin: 0 0;
+  animation: kf_Vector_21_transform_0 4s linear infinite;
+}
+@keyframes kf_Vector_20_transform_0 {
+  0% {
+    transform: translateX(11px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  7.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(11px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  10% {
+    transform: translateX(11px) translateY(81px) scaleX(0) scaleY(1);
+  }
+  12.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(11px) translateY(81px) scaleX(0) scaleY(1);
+  }
+  17.5% {
+    transform: translateX(11px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateX(11px) translateY(81px) scaleX(1) scaleY(1);
+  }
+}
+#Vector_20 {
+  transform-origin: 0 0;
+  animation: kf_Vector_20_transform_0 4s linear infinite;
+}
+@keyframes kf_Vector_22_transform_0 {
+  0% {
+    transform: translateX(59px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  12.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(59px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  15% {
+    transform: translateX(59px) translateY(81px) scaleX(0) scaleY(1);
+  }
+  17.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(59px) translateY(81px) scaleX(0) scaleY(1);
+  }
+  22.5% {
+    transform: translateX(59px) translateY(81px) scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: translateX(59px) translateY(81px) scaleX(1) scaleY(1);
+  }
+}
+#Vector_22 {
+  transform-origin: 0 0;
+  animation: kf_Vector_22_transform_0 4s linear infinite;
+}
+@keyframes kf_Ellipse_87_transform_0 {
+  0% {
+    transform: translateX(-20px) translateY(20px) translateX(0px) translateY(0px);
+  }
+  10% {
+    transform: translateX(-20px) translateY(20px) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(-20px) translateY(20px) translateX(40px) translateY(-40px);
+  }
+  100% {
+    transform: translateX(-20px) translateY(20px) translateX(40px) translateY(-40px);
+  }
+}
+#Ellipse_87 {
+  transform-origin: 0 0;
+  animation: kf_Ellipse_87_transform_0 4s linear infinite;
+}
+@keyframes kf_Rectangle_116_transform_0 {
+  0% {
+    transform: translate(0px, 10px) scaleX(1) scaleY(1) translate(0px, -10px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translate(0px, 10px) scaleX(1) scaleY(1) translate(0px, -10px);
+  }
+  12.5% {
+    transform: translate(0px, 10px) scaleX(0) scaleY(1) translate(0px, -10px);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translate(0px, 10px) scaleX(0) scaleY(1) translate(0px, -10px);
+  }
+  22.5% {
+    transform: translate(0px, 10px) scaleX(1) scaleY(1) translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 10px) scaleX(1) scaleY(1) translate(0px, -10px);
+  }
+}
+#Rectangle_116 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_116_transform_0 4s linear infinite;
+}
+@keyframes kf_Ellipse_36_transform_0 {
+  0% {
+    transform: translate(0px, 11px) rotate(0rad) translate(0px, -11px);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translate(0px, 11px) rotate(0rad) translate(0px, -11px);
+  }
+  17.5% {
+    transform: translate(0px, 11px) rotate(-1.571rad) translate(0px, -11px);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translate(0px, 11px) rotate(-1.571rad) translate(0px, -11px);
+  }
+  27.5% {
+    transform: translate(0px, 11px) rotate(0rad) translate(0px, -11px);
+  }
+  100% {
+    transform: translate(0px, 11px) rotate(0rad) translate(0px, -11px);
+  }
+}
+#Ellipse_36 {
+  transform-origin: 0 0;
+  animation: kf_Ellipse_36_transform_0 4s linear infinite;
+}
+</style>
+<g id="ani_insights_understanding-shares-etfs" clip-path="url(#clip0_4774_179852)">
+<rect id="Rectangle_73" transform="translate(6 37)" width="38" height="52" rx="2" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_19" transform="translate(11 75)" d="M0 0H22" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_21" transform="translate(59 75)" d="M0 0H22" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_20" transform="translate(11 81)" d="M0 0H14" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_22" transform="translate(59 81)" d="M0 0H14" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<g id="Subtract" filter="url(#filter0_d_4774_179852)" transform="translate(36 5)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM17.9541 7.76172C17.5465 7.38958 16.9145 7.41793 16.542 7.8252L10.8799 14.0176L8.41797 11.3252C8.04532 10.9178 7.41244 10.8892 7.00488 11.2617C6.59753 11.6343 6.56905 12.2673 6.94141 12.6748L10.1416 16.1748C10.331 16.3819 10.5992 16.4999 10.8799 16.5C11.1605 16.4999 11.4288 16.3819 11.6182 16.1748L18.0176 9.1748C18.3902 8.7672 18.3617 8.13438 17.9541 7.76172Z" id="Subtract_bg_0" fill="#FF5400">
+</path>
+</g>
+<g id="Mask_group" clip-path="url(#clip1_4774_179852)" transform="translate(36 5)">
+<mask id="mask0_4774_179852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
+<circle id="Ellipse_86" cx="12" cy="12" r="12" fill="#FF5400"/>
+</mask>
+<g mask="url(#mask0_4774_179852)">
+<circle id="Ellipse_87" transform="translate(-20 20)" cx="12" cy="12" r="12" fill="#FF5400"/>
+</g>
+</g>
+<g id="Mask_group_2" clip-path="url(#clip2_4774_179852)" transform="translate(8 45)">
+<mask id="mask1_4774_179852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
+<rect id="Rectangle_116" width="34" height="20" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask1_4774_179852)">
+<g id="Vector_2" filter="url(#filter1_d_4774_179852)" transform="translate(3 4)">
+<path d="M0 13L9.74319 3.65694L15.9834 9.60522L26 0M26 5.57143V0H20.4286" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<rect id="Rectangle_74" transform="translate(52 37)" width="38" height="52" rx="2" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Ellipse_34" transform="translate(59 46)" d="M22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11C0 4.92487 4.92487 0 11 0V11H22Z" fill="#072756"/>
+<g id="Mask_group_3" clip-path="url(#clip3_4774_179852)" transform="translate(72 44)">
+<mask id="mask2_4774_179852" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="96" height="96">
+<path id="Ellipse_36" d="M11 11H0V0C6.07513 0 11 4.92487 11 11Z" fill="#FF5400"/>
+</mask>
+<g mask="url(#mask2_4774_179852)">
+<g id="Ellipse_35" filter="url(#filter2_d_4774_179852)">
+<path d="M11 11H0V0C6.07513 0 11 4.92487 11 11Z" id="Ellipse_35_bg_0" fill="#FF5400">
+</path>
+</g>
+</g>
+</g>
+<path id="Vector_44" transform="translate(24 18)" d="M8 0H2C0.895431 0 0 0.895431 0 2V12" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_45" transform="matrix(-1 0 0 1 72 18)" d="M8 0H2C0.895431 0 0 0.895431 0 2V12" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_4774_179852" x="-4" y="-4" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4774_179852"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4774_179852" result="shape"/>
+</filter>
+<filter id="filter1_d_4774_179852" x="-5" y="-5" width="36" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4774_179852"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4774_179852" result="shape"/>
+</filter>
+<filter id="filter2_d_4774_179852" x="-4" y="-4" width="19" height="19" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4774_179852"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4774_179852" result="shape"/>
+</filter>
+<clipPath id="clip0_4774_179852">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4774_179852">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+<clipPath id="clip2_4774_179852">
+<rect width="34" height="20" fill="white"/>
+</clipPath>
+<clipPath id="clip3_4774_179852">
+<rect width="11" height="11" fill="white"/>
+</clipPath>
+</defs>
+</svg>

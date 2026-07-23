@@ -1,0 +1,139 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Line_35_transform_0 {
+  0% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(0rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  7.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(-0.279rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  17.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(0.175rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  30% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(-0.105rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  45% {
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(0rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+  100% {
+    transform: translateX(24px) translateY(13px) translate(0px, 11px) rotate(0rad) translate(0px, -11px) rotate(1.571rad) scaleX(1) scaleY(1) skewX(0rad);
+  }
+}
+#Line_35 {
+  transform-origin: 0 0;
+  animation: kf_Line_35_transform_0 4s linear infinite;
+}
+@keyframes kf_Group_4_transform_0 {
+  0% {
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(0rad) translate(-40px, 0px);
+  }
+  2.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(0rad) translate(-40px, 0px);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(-0.14rad) translate(-40px, 0px);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(0.087rad) translate(-40px, 0px);
+  }
+  32.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(-0.052rad) translate(-40px, 0px);
+  }
+  47.5% {
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(0rad) translate(-40px, 0px);
+  }
+  100% {
+    transform: translateX(8px) translateY(9px) translate(40px, 0px) rotate(0rad) translate(-40px, 0px);
+  }
+}
+#Group_4 {
+  transform-origin: 0 0;
+  animation: kf_Group_4_transform_0 4s linear infinite;
+}
+@keyframes kf_Group_5_transform_0 {
+  0% {
+    transform: translateX(52px) translateY(9px) rotate(0rad);
+  }
+  2.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(52px) translateY(9px) rotate(0rad);
+  }
+  10% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(52px) translateY(9px) rotate(-0.14rad);
+  }
+  20% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(52px) translateY(9px) rotate(0.087rad);
+  }
+  32.5% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    transform: translateX(52px) translateY(9px) rotate(-0.052rad);
+  }
+  47.5% {
+    transform: translateX(52px) translateY(9px) rotate(0rad);
+  }
+  100% {
+    transform: translateX(52px) translateY(9px) rotate(0rad);
+  }
+}
+#Group_5 {
+  transform-origin: 0 0;
+  animation: kf_Group_5_transform_0 4s linear infinite;
+}
+</style>
+<g id="ani_insights_managing-investment-risk" clip-path="url(#clip0_4774_179833)">
+<g id="Group_2" transform="translate(23 4)">
+<g id="Ellipse_32" filter="url(#filter0_d_4774_179833)" transform="translate(1 1)">
+<path d="M48 23C48 10.2975 37.2548 0 24 0C10.7452 0 0 10.2975 0 23" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+</g>
+<path id="Ellipse_33" transform="translate(1 1)" d="M0 23C0 10.2975 10.7452 0 24 0" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_30" transform="translate(24) rotate(90)" x1="1" y1="-1" x2="6" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_35" transform="translate(24 13) rotate(90)" x1="1" y1="-1" x2="11" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_32" transform="matrix(0.716751 0.697329 -0.716751 0.697329 7.11539 8.12)" x1="1" y1="-1" x2="6.05759" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_33" transform="matrix(-0.716751 0.697329 0.716751 0.697329 42.5778 8.12)" x1="1" y1="-1" x2="6.05759" y2="-1" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_31" transform="translate(0 25)" x1="1" y1="-1" x2="6" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<line id="Line_34" transform="matrix(-1 0 0 1 50 25)" x1="1" y1="-1" x2="6" y2="-1" stroke="#FF5400" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g id="Frame_3" clip-path="url(#clip1_4774_179833)" transform="translate(-2 28)">
+<path id="Vector_21" transform="translate(32 61)" d="M0 0H36" stroke="#072756" stroke-width="2" stroke-linecap="round"/>
+<path id="Rectangle_76" transform="translate(38 55)" d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V6H0V4Z" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line id="Line_36" transform="translate(51 55) rotate(-90)" x1="1" y1="-1" x2="44" y2="-1" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Ellipse_16" transform="translate(53 5) rotate(90)" d="M3 1C4.10457 1 5 1.89543 5 3C5 4.10457 4.10457 5 3 5C1.89543 5 1 4.10457 1 3C1 1.89543 1.89543 1 3 1Z" stroke="#072756" stroke-width="2"/>
+<g id="Group_4" transform="translate(8 9)">
+<path id="Rectangle_75" transform="translate(0 25)" d="M0 0H28C28 6.62742 22.6274 12 16 12H12C5.37258 12 0 6.62742 0 0Z" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line_38" transform="translate(5)" d="M0 25L8.67993 0H35M8.67993 0L17.3599 25" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Group_5" transform="translate(52 9)">
+<path id="Rectangle_77" transform="translate(12 25)" d="M0 0H28C28 6.62742 22.6274 12 16 12H12C5.37258 12 0 6.62742 0 0Z" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line_39" transform="matrix(-1 7.80561e-08 9.79135e-08 1 35 0)" d="M0 25L8.67993 0H35M8.67993 0L17.3599 25" stroke="#072756" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_4774_179833" x="-5" y="-5" width="58" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.329412 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4774_179833"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4774_179833" result="shape"/>
+</filter>
+<clipPath id="clip0_4774_179833">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="clip1_4774_179833">
+<rect width="100" height="65" fill="white"/>
+</clipPath>
+</defs>
+</svg>
