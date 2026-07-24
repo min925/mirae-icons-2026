@@ -32,78 +32,39 @@
 			width: 100%;
 			height: 100%;
 		}
-		@keyframes banner-text {
-			0%,
-			49.9% {
-				opacity: 0;
-			}
 
-			50%,
-			100% {
-				opacity: 1;
-			}
-		}
-
-		@keyframes banner-cover {
-			/* 左至右展開 */
-			0% {
-				transform: scaleX(0);
-				transform-origin: left center;
-			}
-
-			45% {
-				transform: scaleX(1);
-				transform-origin: left center;
-			}
-
-			/* 完全覆蓋時切換文字 */
-			55% {
-				transform: scaleX(1);
-				transform-origin: right center;
-			}
-
-			/* 左邊緣向右收起 */
-			100% {
-				transform: scaleX(0);
-				transform-origin: right center;
-			}
-		}
-
-		.banner-animation {
-			position: relative;
-			display: inline-block;
-			cursor: pointer;
-		}
-
+		/* Banner Text Animation */
 		.animate-banner-text {
-			position: relative;
-			z-index: 1;
 			display: inline-block;
-			color:#FF5400;
+			letter-spacing: -0.11em;
+			cursor: pointer;
+			color: #FF5400;
+		}
+
+		.animate-banner-letter {
+			display: inline-block;
 			opacity: 0;
+			transform: translateX(-20px);
+
+			animation: letter-slide-in 0.45s cubic-bezier(.5, 0, .5, 1) forwards;
+			animation-delay: calc(var(--index) * 0.06s);
+
+			will-change: transform, opacity;
 		}
 
-		/* 沒播放動畫時保持文字顯示 */
-		.banner-animation:not(.is-animating) .animate-banner-text {
-			opacity: 1;
+		@keyframes letter-slide-in {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
 		}
 
-		.animate-banner-cover {
-			position: absolute;
-			z-index: 2;
-			inset: 0;
-			background-color: #ff5400;
-			transform: scaleX(0);
-			pointer-events: none;
-		}
-
-		.banner-animation.is-animating .animate-banner-text {
-			animation: banner-text 1.5s linear forwards;
-		}
-
-		.banner-animation.is-animating .animate-banner-cover {
-			animation: banner-cover 1.5s cubic-bezier(.77, 0, .18, 1) forwards;
-			will-change: transform;
+		@media (prefers-reduced-motion: reduce) {
+			.animate-banner-letter {
+				opacity: 1;
+				transform: none;
+				animation: none;
+			}
 		}
 	</style>
 </head>
@@ -112,16 +73,13 @@
 	<div class="w-full bg-black text-white text-center p-2">ALL PAGES</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			Banner Animation (css)
+			Banner Animation (css+js)
 		</div>
 		<div class="relative flex-1 min-w-0 w-full text-white">
 			<img class="w-full h-auto object-cover" src="./static/banner/instights-header-d.jpg" alt="">
 			<div class="absolute flex flex-col items-center justify-center top-[19%] left-0 w-full">
-				<span class="text-2xl md:text-4xl lg:text-6xl">Ideas for a Changing
-					<span id="banner-animation" class="banner-animation">
-						<span class="animate-banner-text">Innovator</span>
-						<span class="animate-banner-cover"></span>
-					</span>
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Ideas for a Changing
+					<span id="animate-banner-text" class="animate-banner-text">Innovator</span>
 				</span>
 			</div>
 		</div>
@@ -203,6 +161,8 @@
 		</div>
 	</div>
 	<script>
+
+		// click to replay the homepage logo animation
 		const homepageLogo = document.getElementById('homepage-logo');
 		const homepageLogoSrc = homepageLogo.src;
 
@@ -221,24 +181,56 @@
 			}
 		});
 
-		const bannerAnimation = document.getElementById('banner-animation');
+		/** 
+		 * Banner Text Animation
+		 * This function takes an element and wraps each character in a span with a class for animation
+		 * */
 
-		function replayBannerAnimation() {
-			bannerAnimation.classList.remove("is-animating");
+		function createTextAnimation(element) {
+			const text = element.textContent.trim();
 
-			// 強制瀏覽器套用移除 animation 後的狀態
-			void bannerAnimation.offsetWidth;
+			// Keep the original text available to screen readers
+			element.setAttribute("aria-label", text);
 
-			bannerAnimation.classList.add("is-animating");
+			// Split Unicode characters more safely
+			const letters = Array.from(text);
+
+			element.innerHTML = letters
+				.map((letter, index) => {
+					const character = letter === " " ? "&nbsp;" : letter;
+
+					return `
+						<span
+							class="animate-banner-letter"
+							style="--index: ${index}"
+							aria-hidden="true"
+						>${character}</span>
+					`;
+				})
+				.join("");
 		}
 
-		bannerAnimation.addEventListener("click", replayBannerAnimation);
+		const animateText = document.querySelector("#animate-banner-text");
 
-		bannerAnimation.addEventListener("keydown", (event) => {
-			if (event.key === "Enter" || event.key === " ") {
-				event.preventDefault();
-				replayBannerAnimation();
-			}
+		createTextAnimation(animateText);
+
+		// click to replay the animation
+		function replayTextAnimation(element) {
+			const letters = element.querySelectorAll(".animate-banner-letter");
+
+			letters.forEach((letter) => {
+				letter.style.animation = "none";
+			});
+
+			void element.offsetWidth;
+
+			letters.forEach((letter) => {
+				letter.style.animation = "";
+			});
+		}
+
+		animateText.addEventListener("click", () => {
+			replayTextAnimation(animateText);
 		});
 	</script>
 </body>
