@@ -32,6 +32,79 @@
 			width: 100%;
 			height: 100%;
 		}
+		@keyframes banner-text {
+			0%,
+			49.9% {
+				opacity: 0;
+			}
+
+			50%,
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes banner-cover {
+			/* 左至右展開 */
+			0% {
+				transform: scaleX(0);
+				transform-origin: left center;
+			}
+
+			45% {
+				transform: scaleX(1);
+				transform-origin: left center;
+			}
+
+			/* 完全覆蓋時切換文字 */
+			55% {
+				transform: scaleX(1);
+				transform-origin: right center;
+			}
+
+			/* 左邊緣向右收起 */
+			100% {
+				transform: scaleX(0);
+				transform-origin: right center;
+			}
+		}
+
+		.banner-animation {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.animate-banner-text {
+			position: relative;
+			z-index: 1;
+			display: inline-block;
+			color:#FF5400;
+			opacity: 0;
+		}
+
+		/* 沒播放動畫時保持文字顯示 */
+		.banner-animation:not(.is-animating) .animate-banner-text {
+			opacity: 1;
+		}
+
+		.animate-banner-cover {
+			position: absolute;
+			z-index: 2;
+			inset: 0;
+			background-color: #ff5400;
+			transform: scaleX(0);
+			pointer-events: none;
+		}
+
+		.banner-animation.is-animating .animate-banner-text {
+			animation: banner-text 1.5s linear forwards;
+		}
+
+		.banner-animation.is-animating .animate-banner-cover {
+			animation: banner-cover 1.5s cubic-bezier(.77, 0, .18, 1) forwards;
+			will-change: transform;
+		}
 	</style>
 </head>
 <body class="flex flex-col gap-8 p-4 w-full">
@@ -39,30 +112,18 @@
 	<div class="w-full bg-black text-white text-center p-2">ALL PAGES</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			Line Background
+			Banner Animation (css)
 		</div>
-		<img class="flex-1 min-w-0 w-full h-auto object-cover" src="./ani/all/bg-line.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center bg-[#DEDEDE] py-4">
-		<div class="w-[180px]">
-			Floating CTA
-		</div>
-		<div class="relative w-1/3 max-w-[240px]">
-			<img class="relative w-full h-auto z-1" src="./ani/all/qrcode.png" alt="">
-			<div class="absolute top-[48%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[130%] min-h-0 pb-[130%]">
-				<img class="absolute top-0 w-full pb-[100%]" src="./ani/all/breathing-light.svg" alt="">
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/instights-header-d.jpg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[19%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl">Ideas for a Changing
+					<span id="banner-animation" class="banner-animation">
+						<span class="animate-banner-text">Innovator</span>
+						<span class="animate-banner-cover"></span>
+					</span>
+				</span>
 			</div>
-		</div>
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			App Mockup<br />
-			<a class="underline text-xs" href="./ani/all/app-mockup.png" target="_blank">base png</a>, <a class="underline text-xs" href="./ani/all/app-mockup-chart.svg" target="_blank">chart svg</a>, <a class="underline text-xs" href="./ani/all/app-mockup-pos.svg" target="_blank">position svg</a>
-		</div>
-		<div class="relative w-full max-w-[900px]">
-			<img class="relative w-full h-auto" src="./ani/all/app-mockup.png" alt="">
-			<img class="absolute top-[21.4%] left-[56.7%] w-[26.3%]" src="./ani/all/app-mockup-chart.svg" alt="">
-			<img class="absolute top-[69%] left-[13.7%] w-[25.8%]" src="./ani/all/app-mockup-pos.svg" alt="">
 		</div>
 	</div>
 
@@ -70,8 +131,8 @@
 	<div class="w-full bg-black text-white text-center p-2">HOMEPAGE</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			<div class="updated"></div>
-			MAPS (Play Once Only)
+			MAPS (Play Once Only)<br />
+			<a class="underline text-xs" href="./ani/banner/homepage-logo.svg" target="_blank">svg</a>
 		</div>
 		<div class="relative w-[500px] h-[130px] overflow-hidden">
 			<img id="homepage-logo" class="w-full cursor-pointer" src="./ani/banner/homepage-logo.svg" alt="Mirae Asset logo" role="button" tabindex="0" aria-label="Replay logo animation">
@@ -79,13 +140,15 @@
 	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			<div class="updated"></div>
 			Banner<br />
-			<a class="underline text-xs" href="./ani/banner/homepage-d.svg" target="_blank">bg svg</a>, <a class="underline text-xs" href="./ani/banner/globe.svg" target="_blank">globe svg</a>
+			<a class="underline text-xs" href="./ani/banner/homepage-d.svg" target="_blank">bg svg</a>, <a class="underline text-xs" href="./ani/homepage/globe-orange-back.svg" target="_blank">globe orange (back) svg</a>, <a class="underline text-xs" href="./static/homepage/globe-orange-front.svg" target="_blank">globe orange (front) svg</a>, <a class="underline text-xs" href="./static/homepage/globe-white-back.svg" target="_blank">globe white (back) svg</a>, <a class="underline text-xs" href="./ani/homepage/globe-white-front.svg" target="_blank">globe white (front) svg</a>
 		</div>
-		<div class="relative w-full overflow-hidden">
+		<div class="relative flex-1 min-w-0 w-full overflow-hidden">
 			<img class="w-full" src="./ani/banner/homepage-d.svg" alt="">
-			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_110s_linear_infinite]" src="./ani/banner/globe.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_180s_linear_infinite_reverse]" src="./ani/homepage/globe-orange-back.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_200s_linear_infinite]" src="./static/homepage/globe-orange-front.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_200s_linear_infinite_reverse]" src="./static/homepage/globe-white-back.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_180s_linear_infinite]" src="./ani/homepage/globe-white-front.svg" alt="">
 			<div class="absolute bottom-0 left-0 w-full min-h-0 pb-[18%] bg-gradient-to-b from-[#001932]/0 to-[#001932]"></div>
 			<!-- for testing -->
 			<img class="absolute w-full top-0 left-0" src="./ani/banner/homepage-d-content.png" alt="">
@@ -93,149 +156,51 @@
 	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			Feature Bar
+			Global Opportunities<br />
+			<a class="underline text-xs" href="./ani/homepage/globe-dots.svg" target="_blank">globe dots svg</a>
 		</div>
-		<img src="./ani/feature/global-market-access-to-hk.svg" alt="">
-		<img src="./ani/feature/in-depth-insights.svg" alt="">
-		<img src="./ani/feature/next-gen-investing-wealth.svg" alt="">
-		<img src="./ani/feature/trust-regulation-security.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			Download Bar
-		</div>
-		<img src="./ani/download/range-of-products.svg" alt="">
-		<img src="./ani/download/real-time-market-data.svg" alt="">
-		<img src="./ani/download/smart-trading-tools.svg" alt="">
-		<img src="./ani/download/secure-regulated.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			<div class="updated"></div>
-			Global Opportunities
-		</div>
-		<img class="animate-[spin_110s_linear_infinite]" src="./ani/globe.svg" alt="">
-	</div>
-
-	<!-- THE APP -->
-	<div class="w-full bg-black text-white text-center p-2">THE APP</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			<div class="updated"></div>
-			Banner<br />
-			<a class="underline text-xs" href="./ani/banner/theapp-screen-l.png" target="_blank">app screen left png</a>, <a class="underline text-xs" href="./ani/banner/theapp-screen-m.png" target="_blank">app screen middle png</a>, <a class="underline text-xs" href="./ani/banner/theapp-screen-r.png" target="_blank">app screen right png</a>, <a class="underline text-xs" href="./ani/banner/theapp-d.svg" target="_blank">bg svg</a>
-		</div>
-		<div class="relative w-full overflow-hidden">
-			<img class="w-full" src="./ani/banner/theapp-d.svg" alt="">
-			<img class="absolute top-[52.75%] left-[6.25%] w-[27%] animate-subtle-up-down" src="./ani/banner/theapp-screen-l.png" alt="">
-			<img class="absolute top-[59%] left-[36.5%] w-[27%] animate-subtle-up-down" style="animation-delay: 2s;" src="./ani/banner/theapp-screen-m.png" alt="">
-			<img class="absolute top-[52.75%] right-[6.25%] w-[27%] animate-subtle-up-down" style="animation-delay: 4s;" src="./ani/banner/theapp-screen-r.png" alt="">
-		</div>
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			Feature Bar
-		</div>
-		<img src="./ani/feature/global-market-access-to-hk.svg" alt="">
-		<img src="./ani/feature/diversified-products.svg" alt="">
-		<img src="./ani/feature/smart-investing.svg" alt="">
-		<img src="./ani/feature/trust-regulation-security.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			<div class="updated"></div>
-			Our Worldwide Network
-		</div>
-		<img class="flex-1 min-w-0 w-full h-auto object-cover" src="./ani/the-app/worldwide-network.svg" alt="">
-	</div>
-
-	<!-- GET STARTED -->
-	<div class="w-full bg-black text-white text-center p-2">GET STARTED</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			5 steps bar
-		</div>
-		<img src="./ani/steps/download-maps.svg" alt="">
-		<img src="./ani/steps/create-account.svg" alt="">
-		<img src="./ani/steps/complete-verification.svg" alt="">
-		<img src="./ani/steps/complete-setup.svg" alt="">
-		<img src="./ani/steps/global-markets.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			<div class="updated"></div>
-			Need help getting started?<br />
-			<a class="underline text-xs" href="./ani/get-started/opening-account-base-btm.png" target="_blank">base (btm) png</a>, <a class="underline text-xs" href="./ani/get-started/opening-account.svg" target="_blank">screen svg</a>, <a class="underline text-xs" href="./ani/get-started/opening-account-base-top.png" target="_blank">base (top) png</a>, <a class="underline text-xs" href="./ani/get-started/submitted.svg" target="_blank">submitted svg</a>
-		</div>
-		<div class="relative max-w-[600px] w-full">
-			<img src="./ani/get-started/opening-account-base-btm.png" alt="">
-			<img class="absolute w-full h-full top-0 left-0" src="./ani/get-started/opening-account.svg" alt="">
-			<img class="absolute w-full h-full top-0 left-0" src="./ani/get-started/opening-account-base-top.png" alt="">
-			<img class="absolute left-[2.7%] top-[12.2%] w-[23%]" src="./ani/get-started/submitted.svg" alt="">
-		</div>
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			New to Investing?<br />
-			<a class="underline text-xs" href="./ani/get-started/newbie.png" target="_blank">base png</a>, <a class="underline text-xs" href="./ani/get-started/newbie-chart.svg" target="_blank">chart svg</a>
-		</div>
-		<div class="relative max-w-[600px] w-full">
-			<img src="./ani/get-started/newbie.png" alt="">
-			<img class="absolute left-[29.7%] top-[45%] w-[40%]" src="./ani/get-started/newbie-chart.svg" alt="">
+		<div class="relative flex-1 min-w-0 w-full px-24 py-20 overflow-hidden">
+			<img class="absolute top-0 left-0 -translate-x-1/3 h-full animate-[spin_200s_linear_infinite]" src="./ani/homepage/globe-dots.svg" alt="">
+			<img class="relative z-10" src="./static/homepage/global-opportunities.png" alt="">
 		</div>
 	</div>
 
-	<!-- SUPPORT -->
-	<div class="w-full bg-black text-white text-center p-2">SUPPORT</div>
+	<!-- Insights -->
+	<div class="w-full bg-black text-white text-center p-2">INSIGHTS</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
-			<div class="updated"></div>
-			Banner<br />
-			<a class="underline text-xs" href="./ani/banner/support-d.svg" target="_blank">desktop svg</a>, <a class="underline text-xs" href="./ani/banner/support-m.svg" target="_blank">mobile svg</a>
-		</div>
-		<div class="flex flex-1 min-w-0 w-full  flex-row gap-4">
-			<div class="relative w-full overflow-hidden">
-				<img class="w-full" src="./ani/banner/support-d.png" alt="">
-				<img class="absolute top-0 left-0 w-full" src="./ani/banner/support-d.svg" alt="">
-			</div>
-			<div class="relative w-full max-w-[300px] overflow-hidden">
-				<img class="w-full" src="./ani/banner/support-m.png" alt="">
-				<img class="absolute top-0 left-0 w-full" src="./ani/banner/support-m.svg" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			Contact Bar
-		</div>
-		<img src="./ani/contact/phone.svg" alt="">
-		<img src="./ani/contact/email.svg" alt="">
-		<img src="./ani/contact/working-hours.svg" alt="">
-	</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			Helpful Resources
-		</div>
-		<img src="./ani/help/account-opening.svg" alt="">
-		<img src="./ani/help/user-guide.svg" alt="">
-		<img src="./ani/help/fees.svg" alt="">
-		<img src="./ani/help/form-download.svg" alt="">
-		<img src="./ani/help/document-security.svg" alt="">
-		<img src="./ani/help/useful-link.svg" alt="">
-	</div>
-
-	<!-- Insight -->
-	<div class="w-full bg-black text-white text-center p-2">INSIGHT</div>
-	<div class="flex flex-row gap-4 items-center">
-		<div class="w-[180px]">
-			<div class="updated"></div>
-			Learn Before You Invest
+			Learn Before You Invest<br />
+			<a class="underline text-xs" href="./ani/insights/get-start-with-investing.svg" target="_blank">get-start-with-investing svg</a>, <a class="underline text-xs" href="./ani/insights/understanding-shares-etfs.svg" target="_blank">understanding-shares-etfs svg</a>, <a class="underline text-xs" href="./ani/insights/managing-investment-risk.svg" target="_blank">managing-investment-risk svg</a>, <a class="underline text-xs" href="./ani/insights/diversification-explained.svg" target="_blank">diversification-explained svg</a>, <a class="underline text-xs" href="./ani/insights/common-investing-terms.svg" target="_blank">common-investing-terms svg</a>
 		</div>
 		<img src="./ani/insights/get-start-with-investing.svg" alt="">
 		<img src="./ani/insights/understanding-shares-etfs.svg" alt="">
 		<img src="./ani/insights/managing-investment-risk.svg" alt="">
 		<img src="./ani/insights/diversification-explained.svg" alt="">
 		<img src="./ani/insights/common-investing-terms.svg" alt="">
+	</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Follow Us<br />
+			<a class="underline text-xs" href="./ani/all/bg-line.svg" target="_blank">bg line svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<img class="w-full h-auto object-cover" src="./static/insights/social-media-bg.jpg" alt="">
+			<img class="absolute w-full h-auto top-1/2 left-0 transform -translate-y-1/2" src="./ani/all/bg-line.svg" alt="">
+			<img class="absolute w-2/3 h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./static/insights/social-media-content.png" alt="">
+		</div>
+	</div>
+
+	<!-- Our Story -->
+	<div class="w-full bg-black text-white text-center p-2">OUR STORY</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Your World of Wealth<br />
+			<a class="underline text-xs" href="./static/our-story/world-of-wealth-bg.png" target="_blank">static bg png</a>, <a class="underline text-xs" href="./ani/our-story/world-of-wealth.svg" target="_blank">svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<img class="w-full h-auto object-cover" src="./static/our-story/world-of-wealth-bg.png" alt="">
+			<img class="absolute w-full h-auto bottom-0 left-0" src="./ani/our-story/world-of-wealth.svg" alt="">
+		</div>
 	</div>
 	<script>
 		const homepageLogo = document.getElementById('homepage-logo');
@@ -253,6 +218,26 @@
 			if (event.key === 'Enter' || event.key === ' ') {
 				event.preventDefault();
 				replayHomepageLogo();
+			}
+		});
+
+		const bannerAnimation = document.getElementById('banner-animation');
+
+		function replayBannerAnimation() {
+			bannerAnimation.classList.remove("is-animating");
+
+			// 強制瀏覽器套用移除 animation 後的狀態
+			void bannerAnimation.offsetWidth;
+
+			bannerAnimation.classList.add("is-animating");
+		}
+
+		bannerAnimation.addEventListener("click", replayBannerAnimation);
+
+		bannerAnimation.addEventListener("keydown", (event) => {
+			if (event.key === "Enter" || event.key === " ") {
+				event.preventDefault();
+				replayBannerAnimation();
 			}
 		});
 	</script>
