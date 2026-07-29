@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mirae Assets - animation</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<style>
+		@keyframes subtle-up-down {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(3%); }
+		}
+		.animate-subtle-up-down {
+			animation: subtle-up-down 6s ease-in-out infinite;
+		}
+		.updated {
+			position: relative;
+			width: 3rem;
+			height: 1rem;
+			background-color: #FF5400;
+		}
+		.updated::before {
+			content: 'UPDATED';
+			position: absolute;
+			font-size: 0.5rem;
+			text-align: center;
+			align-content: center;
+			color: white;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Banner Text Animation */
+		.animate-banner-text {
+			display: inline-block;
+			letter-spacing: -0.11em;
+			cursor: pointer;
+			color: #FF5400;
+		}
+
+		.animate-banner-letter {
+			display: inline-block;
+			opacity: 0;
+			transform: translateX(-20px);
+
+			animation: letter-slide-in 0.45s cubic-bezier(.5, 0, .5, 1) forwards;
+			animation-delay: calc(var(--index) * 0.06s);
+
+			will-change: transform, opacity;
+		}
+
+		@keyframes letter-slide-in {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes arrow-nudge-horizontal {
+			0%, 100% { transform: translateX(0); }
+			50% { transform: translateX(5px); }
+		}
+
+		.group:hover .animate-arrow-nudge {
+			animation: arrow-nudge-horizontal 0.65s ease-in-out infinite;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.animate-banner-letter {
+				opacity: 1;
+				transform: none;
+				animation: none;
+			}
+
+			.group:hover .animate-arrow-nudge {
+				animation: none;
+			}
+		}
+	</style>
+</head>
+<body class="flex flex-col gap-8 p-4 w-full">
+	<div class="flex flex-row gap-4">
+		<a href="./animated_svg.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260717</a>
+		<a href="./animated_svg-20260724.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260724</a>
+		<a href="#" class="px-4 py-2 rounded-full bg-black text-white border border-black hover:bg-white hover:text-black transition-all">20260730</a>
+	</div>
+
+	<!-- SUPPORT -->
+	<div class="w-full bg-black text-white text-center p-2">SUPPORT</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Banner Animation (css+js)<br />
+			<a class="underline text-xs" href="./ani/banner/support-d.svg" target="_blank">svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/support-header-d.jpg" alt="">
+			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/support-d.svg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[19%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">What can we
+					<span id="animate-banner-text" class="animate-banner-text">help</span>?
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Human touch block + button mouse over animation<br />
+			<a class="underline text-xs" href="./ani/banner/support-d.svg" target="_blank">svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<div class="w-full max-w-screen-xl mx-auto px-4 py-2 flex flex-row justify-between items-center text-[#072756] bg-[#FFEDE4] rounded-sm">
+				<div class="flex flex-row gap-4 items-center">
+					<img class="w-[96px] h-auto object-cover" src="./ani/contact/support.svg" alt="">
+					<div class="text-lg font-medium">Not sure where to start? That’s okay  - we’ll help point you in the right direction.</div>
+				</div>
+				<button class="group cursor-pointer flex flex-row items-center gap-2 bg-[#FF5400] rounded-sm text-lg text-white px-5 h-[56px] hover:opacity-80 transition-all">
+					Speak with our team
+					<img class="animate-arrow-nudge w-5" src="./ani/icons/buttons/arrow-right.svg" alt="">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Contact Us<br />
+			<a class="underline text-xs" href="./ani/support/bg-contactus.svg" target="_blank">bg svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<div class="relative flex flex-col bg-[#072756]">
+				<img class="relative w-full z-10" src="./static/support/section-bg-top.png" alt="">
+				<img class="absolute top-1/2 left-0 w-full -translate-y-1/2 z-0" src="./ani/support/bg-contactus.svg" alt="">
+				<div class="relative w-full px-8 py-4 z-10">
+					<div class="relative">
+						<img class="w-full" src="./static/support/contact.png" alt="">
+						<img class="absolute w-[6.25%] top-[52%] left-[1.3%]" src="./ani/contact/phone.svg" alt="">
+						<img class="absolute w-[6.25%] top-[52%] left-[35%]" src="./ani/contact/email.svg" alt="">
+						<img class="absolute w-[6.25%] top-[52%] left-[69%]" src="./ani/contact/working-hours.svg" alt="">
+					</div>
+				</div>
+				<img class="relative w-full z-10" src="./static/support/section-bg-btm.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!-- Insights -->
+	<div class="w-full bg-black text-white text-center p-2">INSIGHTS</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Learn Before You Invest<br />
+			<a class="underline text-xs" href="./ani/insights/get-start-with-investing.svg" target="_blank">get-start-with-investing svg</a>, <a class="underline text-xs" href="./ani/insights/understanding-shares-etfs.svg" target="_blank">understanding-shares-etfs svg</a>, <a class="underline text-xs" href="./ani/insights/managing-investment-risk.svg" target="_blank">managing-investment-risk svg</a>, <a class="underline text-xs" href="./ani/insights/diversification-explained.svg" target="_blank">diversification-explained svg</a>, <a class="underline text-xs" href="./ani/insights/common-investing-terms.svg" target="_blank">common-investing-terms svg</a>
+		</div>
+		<img src="./ani/insights/get-start-with-investing.svg" alt="">
+		<img src="./ani/insights/understanding-shares-etfs.svg" alt="">
+		<img src="./ani/insights/managing-investment-risk.svg" alt="">
+		<img src="./ani/insights/diversification-explained.svg" alt="">
+		<img src="./ani/insights/common-investing-terms.svg" alt="">
+	</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Follow Us<br />
+			<a class="underline text-xs" href="./ani/all/bg-line.svg" target="_blank">bg line svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<img class="w-full h-auto object-cover" src="./static/insights/social-media-bg.jpg" alt="">
+			<img class="absolute w-full h-auto top-1/2 left-0 transform -translate-y-1/2" src="./ani/all/bg-line.svg" alt="">
+			<img class="absolute w-2/3 h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./static/insights/social-media-content.png" alt="">
+		</div>
+	</div>
+
+	<!-- Our Story -->
+	<div class="w-full bg-black text-white text-center p-2">OUR STORY</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Your World of Wealth<br />
+			<a class="underline text-xs" href="./static/our-story/world-of-wealth-bg.png" target="_blank">static bg png</a>, <a class="underline text-xs" href="./ani/our-story/world-of-wealth.svg" target="_blank">svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full">
+			<img class="w-full h-auto object-cover" src="./static/our-story/world-of-wealth-bg.png" alt="">
+			<img class="absolute w-full h-auto bottom-0 left-0" src="./ani/our-story/world-of-wealth.svg" alt="">
+		</div>
+	</div>
+	<script>
+
+		/** 
+		 * Banner Text Animation
+		 * This function takes an element and wraps each character in a span with a class for animation
+		 * */
+
+		function createTextAnimation(element) {
+			const text = element.textContent.trim();
+
+			// Keep the original text available to screen readers
+			element.setAttribute("aria-label", text);
+
+			// Split Unicode characters more safely
+			const letters = Array.from(text);
+
+			element.innerHTML = letters
+				.map((letter, index) => {
+					const character = letter === " " ? "&nbsp;" : letter;
+
+					return `
+						<span
+							class="animate-banner-letter"
+							style="--index: ${index}"
+							aria-hidden="true"
+						>${character}</span>
+					`;
+				})
+				.join("");
+		}
+
+		const animateText = document.querySelector("#animate-banner-text");
+
+		createTextAnimation(animateText);
+
+		// click to replay the animation
+		function replayTextAnimation(element) {
+			const letters = element.querySelectorAll(".animate-banner-letter");
+
+			letters.forEach((letter) => {
+				letter.style.animation = "none";
+			});
+
+			void element.offsetWidth;
+
+			letters.forEach((letter) => {
+				letter.style.animation = "";
+			});
+		}
+
+		animateText.addEventListener("click", () => {
+			replayTextAnimation(animateText);
+		});
+	</script>
+</body>
+</html>
