@@ -1,0 +1,77 @@
+<svg width="1920" height="190" viewBox="0 0 1920 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_Rectangle_122_transform_0 {
+  0% {
+    transform: translateX(0px) translateY(0px) scaleY(-1);
+  }
+  75% {
+    transform: translateX(0px) translateY(290px) scaleY(-1);
+  }
+  100% {
+    transform: translateX(0px) translateY(290px) scaleY(-1);
+  }
+}
+#Rectangle_122 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_122_transform_0 2s linear infinite;
+}
+@keyframes kf_Rectangle_122_2_transform_0 {
+  0% {
+    transform: translateY(163.5px) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateY(163.5px) translateX(0px) translateY(0px);
+  }
+  100% {
+    transform: translateY(163.5px) translateX(0px) translateY(-290px);
+  }
+}
+#Rectangle_122_2 {
+  transform-origin: 0 0;
+  animation: kf_Rectangle_122_2_transform_0 2s linear infinite;
+}
+</style>
+<g id="our-story-d" clip-path="url(#clip0_5095_339739)">
+<g id="Frame_9" clip-path="url(#clip1_5095_339739)" transform="matrix(1 0 0 -1 -0.292847 190)">
+<mask id="mask0_5095_339739" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="190">
+<rect id="Rectangle_122" transform="matrix(1 0 0 -1 0 0)" width="1920" height="100" fill="url(#paint0_linear_5095_339739)"/>
+</mask>
+<g mask="url(#mask0_5095_339739)">
+<path id="Vector_59" opacity="0.3" transform="matrix(1 0 0 -1 -1.53577 169.259)" d="M640 32.7612C590.763 45.4891 193.333 116.095 0 147.261V159.261C157.5 141.761 722.999 37.2603 708 14.2612C701.151 3.75879 618.833 -1.23875 584 0.261246C737 9.25879 698.036 17.7588 640 32.7612Z" fill="#ABCAFF"/>
+<path id="Vector_60" opacity="0.3" transform="matrix(1 0 0 -1 848 169.471)" d="M434.5 174.5C411 145.5 346.3 79.4 275.5 47C192.629 9.07597 74.246 2.73053 11.9001 0.422962C7.61051 0.288588 3.63341 0.152833 0 0C3.68903 0.128112 7.66529 0.266222 11.9001 0.422962C70.1819 2.24867 186.148 3.8192 281.5 44.4998C364.046 79.7167 441.5 141.5 471 174.5H434.5Z" fill="#ABCAFF"/>
+</g>
+</g>
+<g id="Frame_9_2" clip-path="url(#clip2_5095_339739)" transform="translate(-0.292847 26.5)">
+<mask id="mask1_5095_339739" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="190">
+<rect id="Rectangle_122_2" transform="translate(0 163.5)" width="1920" height="100" fill="url(#paint1_linear_5095_339739)"/>
+</mask>
+<g mask="url(#mask1_5095_339739)">
+<path id="Vector_61" opacity="0.2" transform="translate(918.75 0.5)" d="M141.486 71.955C146.315 84.1922 144.319 139.831 141.486 163H148.985C152.485 129.225 158.484 78.3183 129.487 42.5856C106.289 13.9994 32.83 1.63163 0 0C123.988 10.7688 132.987 50.4174 141.486 71.955Z" fill="#ABCAFF"/>
+<path id="Vector_63" opacity="0.2" transform="translate(943.75 2.5)" d="M138 57.4299C158.8 81.3835 174.333 136.457 179.5 161H189C174 100.625 141.5 42.7043 103 26.0152C72.2 12.664 21.5 3.10874 0 0C104 21.1067 112 27.4878 138 57.4299Z" fill="#ABCAFF"/>
+<path id="Vector_64" opacity="0.2" transform="translate(960.75 5.5)" d="M136.359 59.972C159.62 88.8366 180.475 136.684 187.995 157H190C182.48 130.671 150.396 73.6242 141.372 63.3851C132.348 53.146 124.829 42.4193 92.2428 24.8665C66.1741 10.8242 19.8857 2.43789 0 0C48.1267 6.33851 107.282 23.8913 136.359 59.972Z" fill="#ABCAFF"/>
+<path id="Vector_62" opacity="0.2" transform="translate(936.75 1.5)" d="M136.5 65.5831C144.5 77.8187 153.5 121.378 156 162H163C154.5 103.758 152.5 77.8187 124.5 45.0272C102.1 18.794 32.1667 4.07855 0 0C117 19.0876 124.687 47.5154 136.5 65.5831Z" fill="#ABCAFF"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_5095_339739" x1="960" y1="0" x2="960" y2="100" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.5" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5095_339739" x1="960" y1="0" x2="960" y2="100" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.5" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_5095_339739">
+<rect width="1920" height="190" fill="white"/>
+</clipPath>
+<clipPath id="clip1_5095_339739">
+<rect width="1920" height="190" fill="white"/>
+</clipPath>
+<clipPath id="clip2_5095_339739">
+<rect width="1920" height="263.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -85,7 +85,7 @@
 	<div class="flex flex-row gap-4">
 		<a href="./animated_svg.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260717</a>
 		<a href="./animated_svg-20260724.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260724</a>
-		<a href="#" class="px-4 py-2 rounded-full bg-black text-white border border-black hover:bg-white hover:text-black transition-all">20260730</a>
+		<a href="#" class="px-4 py-2 rounded-full bg-black text-white border border-black hover:bg-white hover:text-black transition-all">20260731</a>
 	</div>
 
 	<!-- SUPPORT -->
@@ -98,7 +98,7 @@
 		<div class="relative flex-1 min-w-0 w-full text-white">
 			<img class="w-full h-auto object-cover" src="./static/banner/support-header-d.jpg" alt="">
 			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/support-d.svg" alt="">
-			<div class="absolute flex flex-col items-center justify-center top-[19%] left-0 w-full">
+			<div class="absolute flex flex-col items-center justify-center top-[17%] left-0 w-full">
 				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">What can we
 					<span id="animate-banner-text" class="animate-banner-text">help</span>?
 				</span>
@@ -149,6 +149,22 @@
 	<div class="w-full bg-black text-white text-center p-2">INSIGHTS</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
+			Banner Animation (css+js)<br />
+			<a class="underline text-xs" href="./ani/banner/insights-d.svg" target="_blank">svg</a>, <a class="underline text-xs" href="./static/banner/insights-d.png" target="_blank">bg png</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/insights-d.png" alt="">
+			<img class="absolute top-0 left-0 w-full h-auto object-cover" src="./static/banner/insights-header-d.png" alt="">
+			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/insights-d.svg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[17%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Ideas for a Changing 
+					<span id="animate-insights-banner-text" class="animate-banner-text">World</span>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
 			Learn Before You Invest<br />
 			<a class="underline text-xs" href="./ani/insights/get-start-with-investing.svg" target="_blank">get-start-with-investing svg</a>, <a class="underline text-xs" href="./ani/insights/understanding-shares-etfs.svg" target="_blank">understanding-shares-etfs svg</a>, <a class="underline text-xs" href="./ani/insights/managing-investment-risk.svg" target="_blank">managing-investment-risk svg</a>, <a class="underline text-xs" href="./ani/insights/diversification-explained.svg" target="_blank">diversification-explained svg</a>, <a class="underline text-xs" href="./ani/insights/common-investing-terms.svg" target="_blank">common-investing-terms svg</a>
 		</div>
@@ -172,6 +188,22 @@
 
 	<!-- Our Story -->
 	<div class="w-full bg-black text-white text-center p-2">OUR STORY</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Banner Animation (css+js)<br />
+			<a class="underline text-xs" href="./ani/banner/our-story-d.svg" target="_blank">svg</a>, <a class="underline text-xs" href="./static/banner/our-story-d.png" target="_blank">bg png</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/our-story-d.png" alt="">
+			<img class="absolute top-0 left-0 w-full h-auto object-cover" src="./static/banner/our-story-header-d.png" alt="">
+			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/our-story-d.svg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[17%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Permanent 
+					<span id="animate-story-banner-text" class="animate-banner-text">Innovator</span>
+				</span>
+			</div>
+		</div>
+	</div>
 	<div class="flex flex-row gap-4 items-center">
 		<div class="w-[180px]">
 			Your World of Wealth<br />
@@ -214,8 +246,12 @@
 		}
 
 		const animateText = document.querySelector("#animate-banner-text");
+		const animateInsightsText = document.querySelector("#animate-insights-banner-text");
+		const animateStoryText = document.querySelector("#animate-story-banner-text");
 
 		createTextAnimation(animateText);
+		createTextAnimation(animateInsightsText);
+		createTextAnimation(animateStoryText);
 
 		// click to replay the animation
 		function replayTextAnimation(element) {
@@ -234,6 +270,12 @@
 
 		animateText.addEventListener("click", () => {
 			replayTextAnimation(animateText);
+		});
+		animateInsightsText.addEventListener("click", () => {
+			replayTextAnimation(animateInsightsText);
+		});
+		animateStoryText.addEventListener("click", () => {
+			replayTextAnimation(animateStoryText);
 		});
 	</script>
 </body>
