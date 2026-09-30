@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 1600" fill="none" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <filter id="lineGlow" x="-20%" y="-30%" width="140%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="lineGradient" x1="0" y1="0" x2="3840" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#147DFF" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#168CFF"/>
+      <stop offset="0.55" stop-color="#20C8FF"/>
+      <stop offset="0.86" stop-color="#159CFF"/>
+      <stop offset="1" stop-color="#147DFF" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    id="growth-line"
+    pathLength="1"
+    d="M 0 1442
+       L 351 1418
+       L 555 1380
+       L 824 1376
+       L 1020 1374
+       L 1152 1262
+       L 1244 1168
+       L 1373 1104
+       L 1496 1096
+       L 1625 1096
+       L 1764 992
+       L 1885 927
+       L 2074 886
+       L 2240 850
+       L 2380 905
+       L 2511 951
+       L 2640 990
+       L 2742 1026
+       L 2868 982
+       L 3034 916
+       L 3190 887
+       L 3304 891
+       L 3412 770
+       L 3510 656
+       L 3599 514
+       L 3722 391
+       L 3840 355"
+    stroke="url(#lineGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.7"
+    filter="url(#lineGlow)"
+    stroke-dasharray="1"
+    stroke-dashoffset="1">
+    <animate attributeName="stroke-dashoffset" from="1" to="0" dur="2.4s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.42 0 0.2 1"/>
+  </path>
+
+  <path
+    pathLength="1"
+    d="M 0 1442
+       L 351 1418
+       L 555 1380
+       L 824 1376
+       L 1020 1374
+       L 1152 1262
+       L 1244 1168
+       L 1373 1104
+       L 1496 1096
+       L 1625 1096
+       L 1764 992
+       L 1885 927
+       L 2074 886
+       L 2240 850
+       L 2380 905
+       L 2511 951
+       L 2640 990
+       L 2742 1026
+       L 2868 982
+       L 3034 916
+       L 3190 887
+       L 3304 891
+       L 3412 770
+       L 3510 656
+       L 3599 514
+       L 3722 391
+       L 3840 355"
+    stroke="#36D8FF"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="1"
+    stroke-dashoffset="1">
+    <animate attributeName="stroke-dashoffset" from="1" to="0" dur="2.4s" begin="0.25s" fill="freeze" calcMode="spline" keySplines="0.42 0 0.2 1"/>
+  </path>
+</svg>

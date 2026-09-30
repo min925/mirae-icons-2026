@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mirae Assets - animation</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<style>
+		@keyframes subtle-up-down {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(3%); }
+		}
+		.animate-subtle-up-down {
+			animation: subtle-up-down 6s ease-in-out infinite;
+		}
+		.updated {
+			position: relative;
+			width: 3rem;
+			height: 1rem;
+			background-color: #FF5400;
+		}
+		.updated::before {
+			content: 'UPDATED';
+			position: absolute;
+			font-size: 0.5rem;
+			text-align: center;
+			align-content: center;
+			color: white;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Banner Text Animation */
+		.animate-banner-text {
+			display: inline-block;
+			letter-spacing: -0.11em;
+			cursor: pointer;
+			color: #FF5400;
+		}
+
+		.animate-banner-letter {
+			display: inline-block;
+			opacity: 0;
+			transform: translateX(-20px);
+
+			animation: letter-slide-in 0.45s cubic-bezier(.5, 0, .5, 1) forwards;
+			animation-delay: calc(var(--index) * 0.06s);
+
+			will-change: transform, opacity;
+		}
+
+		@keyframes letter-slide-in {
+			to {
+				opacity: 1;
+				transform: translateX(0);
+			}
+		}
+
+		@keyframes arrow-nudge-horizontal {
+			0%, 100% { transform: translateX(0); }
+			50% { transform: translateX(5px); }
+		}
+
+		.group:hover .animate-arrow-nudge {
+			animation: arrow-nudge-horizontal 0.65s ease-in-out infinite;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.animate-banner-letter {
+				opacity: 1;
+				transform: none;
+				animation: none;
+			}
+
+			.group:hover .animate-arrow-nudge {
+				animation: none;
+			}
+		}
+	</style>
+</head>
+<body class="flex flex-col gap-8 p-4 w-full">
+	<div class="flex flex-row gap-4">
+		<a href="./animated_svg.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260717</a>
+		<a href="./animated_svg-20260724.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260724</a>
+		<a href="./animated_svg-20260731.html" class="px-4 py-2 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white transition-all">20260731</a>
+		<a href="#" class="px-4 py-2 rounded-full bg-black text-white border border-black hover:bg-white hover:text-black transition-all">20260804</a>
+	</div>
+
+	<!-- HOMEPAGE -->
+	<div class="w-full bg-black text-white text-center p-2">HOMEPAGE</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Banner<br />
+			<a class="underline text-xs" href="./ani/banner/homepage-d.svg" target="_blank"><div class="updated inline-block"></div>bg svg (glow)</a>, <a class="underline text-xs" href="./ani/banner/homepage-d-dots.svg" target="_blank"><div class="updated inline-block"></div>glowing dots svg</a>, <a class="underline text-xs" href="./ani/homepage/globe-orange-back.svg" target="_blank">globe orange (back) svg</a>, <a class="underline text-xs" href="./static/homepage/globe-orange-front.svg" target="_blank">globe orange (front) svg</a>, <a class="underline text-xs" href="./static/homepage/globe-white-back.svg" target="_blank">globe white (back) svg</a>, <a class="underline text-xs" href="./ani/homepage/globe-white-front.svg" target="_blank">globe white (front) svg</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full overflow-hidden">
+			<img class="w-full" src="./ani/banner/homepage-d.svg" alt="">
+			<img class="absolute top-0 left-0 w-full" src="./ani/banner/homepage-d-dots.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_180s_linear_infinite_reverse]" src="./ani/homepage/globe-orange-back.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_200s_linear_infinite]" src="./static/homepage/globe-orange-front.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_200s_linear_infinite_reverse]" src="./static/homepage/globe-white-back.svg" alt="">
+			<img class="absolute top-[36%] left-1/2 transform -translate-x-1/2 w-[46%] animate-[spin_180s_linear_infinite]" src="./ani/homepage/globe-white-front.svg" alt="">
+			<div class="absolute bottom-0 left-0 w-full min-h-0 pb-[18%] bg-gradient-to-b from-[#001932]/0 to-[#001932]"></div>
+			<!-- for testing -->
+			<img class="absolute w-full top-0 left-0" src="./ani/banner/homepage-d-content.png" alt="">
+		</div>
+	</div>
+
+	<!-- GET STARTED -->
+	<div class="w-full bg-black text-white text-center p-2">GET STARTED</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Banner<br />
+			<a class="underline text-xs" href="./ani/banner/getstarted-d.svg" target="_blank">bg svg</a>, <a class="underline text-xs" href="./static/banner/getstarted-d.png" target="_blank">bg png</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/getstarted-d.png" alt="">
+			<img class="absolute top-0 left-0 w-full h-auto object-cover" src="./static/banner/getstarted-header-d.png" alt="">
+			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/getstarted-d.svg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[17%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">
+					<span id="animate-getstarted-banner-text" class="animate-banner-text">Global</span>
+					 Investment Partner, 
+					<span id="animate-getstarted2-banner-text" class="animate-banner-text">Clients</span>
+					 First
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Insights -->
+	<div class="w-full bg-black text-white text-center p-2">INSIGHTS</div>
+	<div class="flex flex-row gap-4 items-center">
+		<div class="w-[180px]">
+			Banner Animation (css+js)<br />
+			<a class="underline text-xs" href="./ani/banner/insights-d.svg" target="_blank">svg</a>, <a class="underline text-xs" href="./static/banner/insights-d.png" target="_blank">bg png</a>
+		</div>
+		<div class="relative flex-1 min-w-0 w-full text-white">
+			<img class="w-full h-auto object-cover" src="./static/banner/insights-d.png" alt="">
+			<img class="absolute top-0 left-0 w-full h-auto object-cover" src="./static/banner/insights-header-d.png" alt="">
+			<img class="absolute w-full bottom-0 left-0" src="./ani/banner/insights-d.svg" alt="">
+			<div class="absolute flex flex-col items-center justify-center top-[17%] left-0 w-full">
+				<span class="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Ideas for a 
+					<span id="animate-insights-banner-text" class="animate-banner-text">Changing World</span>
+				</span>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+
+		/** 
+		 * Banner Text Animation
+		 * This function takes an element and wraps each character in a span with a class for animation
+		 * */
+
+		function createTextAnimation(element) {
+			const text = element.textContent.trim();
+
+			// Keep the original text available to screen readers
+			element.setAttribute("aria-label", text);
+
+			// Split Unicode characters more safely
+			const letters = Array.from(text);
+
+			element.innerHTML = letters
+				.map((letter, index) => {
+					const character = letter === " " ? "&nbsp;" : letter;
+
+					return `
+						<span
+							class="animate-banner-letter"
+							style="--index: ${index}"
+							aria-hidden="true"
+						>${character}</span>
+					`;
+				})
+				.join("");
+		}
+
+		const animateGetStartedText = document.querySelector("#animate-getstarted-banner-text");
+		const animateGetStarted2Text = document.querySelector("#animate-getstarted2-banner-text");
+		const animateInsightsText = document.querySelector("#animate-insights-banner-text");
+
+		createTextAnimation(animateGetStartedText);
+		createTextAnimation(animateGetStarted2Text);
+		createTextAnimation(animateInsightsText);
+
+		// click to replay the animation
+		function replayTextAnimation(element) {
+			const letters = element.querySelectorAll(".animate-banner-letter");
+
+			letters.forEach((letter) => {
+				letter.style.animation = "none";
+			});
+
+			void element.offsetWidth;
+
+			letters.forEach((letter) => {
+				letter.style.animation = "";
+			});
+		}
+
+		animateGetStartedText.addEventListener("click", () => {
+			replayTextAnimation(animateGetStartedText);
+			replayTextAnimation(animateGetStarted2Text);
+		});
+		animateGetStarted2Text.addEventListener("click", () => {
+			replayTextAnimation(animateGetStartedText);
+			replayTextAnimation(animateGetStarted2Text);
+		});
+		animateInsightsText.addEventListener("click", () => {
+			replayTextAnimation(animateInsightsText);
+		});
+	</script>
+</body>
+</html>
